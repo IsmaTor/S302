@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ComteCorrent implements Pasarella {
 	Scanner entrada = new Scanner(System.in);
 
-	private Pasarella pagament;
+	private MetodePagament pagament;
 
 	// constructor
-	public ComteCorrent(Pasarella pago) {
+	public ComteCorrent(MetodePagament pago) {
 		pagament = pago;
 	}
 
@@ -28,7 +28,7 @@ public class ComteCorrent implements Pasarella {
 				if (intents == pin) {
 					System.out.println("PIN CORRECTE.");
 					cont = 3;
-					pagament.pasarellaPagament();
+					pagament.compra();
 				} else {
 					System.out.println("PIN INCORRECTE.");
 					cont = cont + 1;

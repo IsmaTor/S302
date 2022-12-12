@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class CreditCard implements Pasarella {
 	Scanner entrada = new Scanner(System.in);
 
-	private Pasarella pagament;
+	private MetodePagament pagament;
 
 	// constructor
-	public CreditCard(Pasarella pago) {
+	public CreditCard(MetodePagament pago) {
 		pagament = pago;
 	}
 
@@ -27,7 +27,7 @@ public class CreditCard implements Pasarella {
 				if (intents == pin) {
 					System.out.println("PIN CORRECTE.");
 					cont = 3;
-					pagament.pasarellaPagament();
+					pagament.compra();
 				} else {
 					System.out.println("PIN INCORRECTE.");
 					cont = cont + 1;

@@ -21,9 +21,9 @@ public class MainBotiga {
 			try {
 				do {
 					System.out.println("Escull mètode de pagament: \n" 
-							+ "1. PayPal \n" 
+							+ "1. ComteCorrent \n" 
 							+ "2. Targeta de Crèdit \n"
-							+ "3. ComteCorrent \n" 
+							+ "3. PayPal \n" 
 							+ "0. Sortir / Finalitzar compra.");
 
 					opcio = entrada.nextInt();
